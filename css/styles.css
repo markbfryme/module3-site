@@ -10,6 +10,7 @@ body {
 	background-color: #f6b319;
 	border-radius: 0;
 	border: 0;
+	height:  132;
 }
 
 #logo-img {
@@ -31,8 +32,8 @@ body {
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
 	margin-top: 0;
-	margin-bottom: 0;
-	line-height: .75;
+	margin-bottom: 10px;
+	line-height: 1.0;
 	text-decoration: none;
 }
 
@@ -43,7 +44,7 @@ body {
 	color: #000;
 	text-transform: uppercase;
 	font-size: .7em;
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 .navbar-brand p span {
@@ -82,13 +83,21 @@ body {
 	padding-right: 15px;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+.navbar-header button.navbar-toggle, .icon-bar {
 	border: 1px solid #61122f;
 }
 
-.navbar-default .navbar-header .icon-bar {
+.navbar-default .navbar-toggle .icon-bar {
 	background-color: #61122f;
 	height: 1px;
+}
+
+.navbar-default .navbar-toggle.collapsed {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-toggle.collapsed:hover {
+	background: #ddd;
 }
 
 .navbar-header button.navbar-toggle {
@@ -299,6 +308,19 @@ h3.menu-item-title {
 
 /* Small Devices */
 @media (min-width: 768px) and (max-width: 991px) {
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+
+	.navbar-brand p {
+		height: .6em;
+		margin-top: 12px;
+	}
 	.container .jumbotron {
 		background: url('../images/jumbotron_768.jpg') no-repeat;
 		height: 432px;
@@ -309,7 +331,7 @@ h3.menu-item-title {
 @media (max-width: 767px) {
 	.navbar-brand {
 		padding-top: 10px;
-		height: 80px;
+		height: 140px;
 	}
 	.navbar-brand h1 {
 		padding-top: 10px;
