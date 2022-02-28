@@ -96,7 +96,7 @@ body {
 	background-color: transparent;
 }
 
-.navbar-default .navbar-toggle:active {
+.navbar-default .navbar-toggle:active, .navbar-toggle:hover {
 	background-color: #ddd;
 }
 
@@ -389,6 +389,14 @@ h3.menu-item-title {
 
 	.menu-item-description {
 		text-align: center;
+	}
+
+	.navbar-default .navbar-toggle:focus {
+	background-color: #ddd
+	}
+
+	.navbar-default .navbar-toggle:active, .navbar-toggle:hover {
+		background-color: #ddd;
 	}
 
 	/* End Footer */
