@@ -328,7 +328,7 @@ h3.menu-item-title {
 }
 
 /* Extra Small Devices */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.navbar-brand {
 		padding-top: 10px;
 		height: 140px;
